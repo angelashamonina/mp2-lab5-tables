@@ -4,7 +4,6 @@
 #include "hash.h"
 #include "unsorted.h"
 
-
 int main()
 {
 	try {
@@ -67,8 +66,9 @@ int main()
 				cout << "Searching from tree: " << tree.count_s << " operations" << endl;
 				hash->search(s);
 				cout << "Searching from the hash table: " << hash->count_s << " operations" << endl;
-				cout << endl << s << ": " << table.search(s) << endl << endl;
+			    table.search(s);
 				cout << "Searching from unsorted table: " << table.count_s << " operations" << endl;
+				cout << endl << s << ": " << table.search(s) << endl << endl;
 				cout << endl;
 				break;
 			}
