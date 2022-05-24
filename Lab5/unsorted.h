@@ -62,13 +62,13 @@ T search(string key) {
 		if (mas[i].key == key&& mas[i].empty != true)
 			return mas[i].data;
 	}
-	cout << "Searching from unsorted table: " << count_s+1 << " operations" << endl;
-	throw "Not found";
+	cout<< "Not found"<<endl;
+	return mas[count + 1].data;
 }
 void del(string s)
 {
 	if (count==0)
-		throw "table is empty";
+		throw "Tables is empty";
 	count_d = 0;
 	Row<T> r(s,search(s) );
 	count_d += count_s;
